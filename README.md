@@ -1,9 +1,11 @@
 # TODOs
 - add partitura as dependency in env.yml after release of v1.3.2
 - check if env creation works as planned
-- run main again and check if all dependencies are correctly installed (numpy<numpy=1.21.2)
+- run main again and check if all dependencies are correctly installed (numpy=1.21.2)
+- publish paper on arxiv and link
 
 --- 
+
 # Batik-plays-Mozart dataset
 
 The [Batik-plays-Mozart dataset](link) is a piano performance dataset containing 12 complete Mozart Piano Sonatas (36 distinct movements) performed on a computer-monitored Bösendorfer grand piano by Viennese concert pianist Roland Batik. The performances are provided in MIDI format (the corresponding audio files are commercially available) and note-levelaligned with scores in the New Mozart Edition in MusicXML and musicological harmony, cadence and phrase annotations previously published in [The Annotated Mozart Sonatas](https://transactions.ismir.net/articles/10.5334/tismir.63). 
