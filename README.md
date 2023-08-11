@@ -17,7 +17,7 @@ This repository contains all performances in MIDI, scores in MusicXML and alignm
   - numpy 1.21
   - pandas 1.4.1
 - If you use conda, you can install the dependencies with: `conda env create -f env.yml`
-- To create the score2score and perf2score2annotations alignments, run: `python ./main.py`
+- To create the dataset, run: `python ./main.py`
 
 The script has been tested in Windows, Linux and Mac OS with python 3.9, and the libraries partitura v1.3.2, numpy v1.21.2 and pandas 1.4.1.
 
