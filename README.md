@@ -1,5 +1,5 @@
 # TODOs
-- add partitura as dependency in env.yml after release of v1.3.2
+- add partitura as dependency in env.yml after release of v1.3.2 !! -> before this version is released the code will not run as intended!
 - check if env creation works as planned
 - run main again and check if all dependencies are correctly installed (numpy=1.21.2)
 - publish paper on arxiv and link
