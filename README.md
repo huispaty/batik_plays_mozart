@@ -1,6 +1,9 @@
+!! The code in this repo depends on the release of v1.3.2 of the partitura package. Before that version is released the code will not run as intended !!
+
 # TODOs
-- add partitura as dependency in env.yml after release of v1.3.2 !! -> before this version is released the code will not run as intended!
+- add partitura as dependency in env.yml after release of v1.3.2
 - check if env creation works as planned
+- add git submodule init command in README
 - run main again and check if all dependencies are correctly installed (numpy=1.21.2)
 - publish paper on arxiv and link
 
