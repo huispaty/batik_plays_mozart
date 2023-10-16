@@ -26,7 +26,7 @@ This repository contains all performances in MIDI, scores in MusicXML and alignm
 
 
 
-# `main` branch
+## `main` branch
 This branch provides the curated data in the following formats:
 ```
 ├── match                       # alignments in match file format
@@ -36,10 +36,10 @@ This branch provides the curated data in the following formats:
 ├── annotations                 # the annotations provided by the authors of The Annotated Mozart Sonatas, linked as a submodule
 ```
 
-# `curate_data` branch
+## `curate_data` branch
 This branch supports linking and 'curating' the data as described in the paper:
 
-#### Setup
+### Setup
 - Install dependencies:
   - python 3.9
   - partitura 1.4.0
@@ -50,7 +50,7 @@ This branch supports linking and 'curating' the data as described in the paper:
 - To create the score2score and perf2score2annotations alignments, run: `python ./main.py`
 
 
-#### Structure
+### Structure
 After running `main.py`, you will get the following repository structure:
 ```
 annotations             # the musicological annotations, linked as a submodule
