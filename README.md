@@ -100,7 +100,7 @@ Each movement-wise directory contains the following files:
 ```
 
 # Citing
-If you use this dataset in any research, please cite the relevant paper:
+If you use this dataset in your research, please cite the relevant paper:
 
 ```
 @inproceedings{hu2023batik,
