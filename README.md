@@ -1,6 +1,6 @@
-# Batik-plays-Mozart dataset
+# The Batik-plays-Mozart corpus
 
-The [Batik-plays-Mozart dataset](link) is a piano performance-to-score dataset containing 12 complete Mozart Piano Sonatas (36 distinct movements) performed on a computer-monitored Bösendorfer grand piano by Viennese concert pianist Roland Batik. The performances are provided in MIDI format and note-aligned with scores in the New Mozart Edition and musicological harmony, cadence and phrase annotations previously published in [The Annotated 
+The [Batik-plays-Mozart corpus](link) is a piano performance-to-score dataset containing 12 complete Mozart Piano Sonatas (36 distinct movements) performed on a computer-monitored Bösendorfer grand piano by Viennese concert pianist Roland Batik. The performances are provided in MIDI format and note-aligned with scores in the New Mozart Edition and musicological harmony, cadence and phrase annotations previously published in [The Annotated 
 Mozart Sonatas](https://transactions.ismir.net/articles/10.5334/tismir.63).
 
 This repository contains all performances in MIDI, scores in MusicXML and alignments in [match file](https://arxiv.org/abs/2206.01104) format. The audio files are commercially available.
@@ -26,29 +26,31 @@ This repository contains all performances in MIDI, scores in MusicXML and alignm
 
 
 
-# `main` branch
+## `main` branch
 This branch provides the curated data in the following formats:
 ```
-├── match              # alignments in match file format
-├── midi               # performance midi files
-├── scores             # score musicxml files
-├── annotations        # score parts corresponding to the unfolded performed score structure, aligned to the harmony, cadence and phrase annotations
+├── match                       # alignments in match file format
+├── midi                        # performance midi files
+├── score_parts_annotated       # score parts corresponding to the unfolded performed score structure, aligned to the harmony, cadence and phrase annotations
+├── scores                      # score musicxml files
+├── annotations                 # the annotations provided by the authors of The Annotated Mozart Sonatas, linked as a submodule
 ```
 
-# `curate_data` branch
+## `curate_data` branch
 This branch supports linking and 'curating' the data as described in the paper:
 
-#### Setup
+### Setup
 - Install dependencies:
   - python 3.9
   - partitura 1.4.0
   - numpy 1.21
   - pandas 1.4.1
 - If you use conda, you can install the dependencies with: `conda env create -f env.yml`
+- Initiate the submodules if this step is not done automatically on cloning: `git submodule init`
 - To create the score2score and perf2score2annotations alignments, run: `python ./main.py`
 
 
-#### Structure
+### Structure
 After running `main.py`, you will get the following repository structure:
 ```
 annotations             # the musicological annotations, linked as a submodule
@@ -57,7 +59,7 @@ perf2score              # the performance-score-annotations alignments
 plots                   # the plots for the two experiments described in the paper
 score2score             # the old inferred scores linked to the New Mozart Edition score
 stats                   # some statistics on the dataset
-utils                   # utility functions to create the dataset
+utils                   # helper functions for creating the dataset
 main.py                 
 env.yml                 
 ```
@@ -110,3 +112,6 @@ If you use this dataset in your research, please cite the relevant paper:
     year = {2023}
 }
 ```
+
+## Acknowledgments
+This work is supported by the European Research Council (ERC) under the EU’s Horizon 2020 research & innovation programme, grant agreement No. 10101937 (["Whither Music?"](https://www.jku.at/en/institute-of-computational-perception/research/projects/whither-music/)).
