@@ -54,12 +54,12 @@ After running `main.py`, you will get the following repository structure:
 annotations             # the musicological annotations, linked as a submodule
 data                    # the input data needed to create the alignments
 perf2score              # the performance-score-annotations alignments
-plots                   # two analysis plots using the data corpus 
+plots                   # the plots for the two experiments described in the paper
 score2score             # the old inferred scores linked to the New Mozart Edition score
 stats                   # some statistics on the dataset
 utils                   # utility functions to create the dataset
-main.py
-env.yml
+main.py                 
+env.yml                 
 ```
 
 #### `score2score` subdir structure
