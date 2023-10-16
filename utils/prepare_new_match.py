@@ -223,6 +223,13 @@ def create_matchfile(piece, score2score_alignment_dir, perf2score_alignment_dir,
     score_fn = f'kv{piece[:3]}_{piece[-1]}.musicxml'
     performance_fn = f'kv{piece}.mid'
     # exporting to match file
+    # fixing tempo indication
+    if 'Rond' in score.movement_title:
+        score.movement_title = score.movement_title.split(' ')[-1]
+    if 'Alla' in score.movement_title: # for kv331_3
+        score.movement_title = 'Allegretto'
+    if 'Menuetto' in score.movement_title:
+        score.movement_title = 'Menuetto'
     new_match_file = pt.io.exportmatch.matchfile_from_alignment(new_perf2score_alignment, match_ppart, score_part, performer=performer, composer=composer, piece=piece_info, score_filename=score_fn, performance_filename=performance_fn, assume_part_unfolded=True, tempo_indication=score.movement_title, diff_score_version_notes=diff_score_version_notes)
     # save in perf2score dir
     new_match_fn = os.path.join(new_perf2score_alignment_dir, f'kv{piece}.match')
