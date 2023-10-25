@@ -203,7 +203,7 @@ def create_corpus_stats(perf2score_dir, stats_dir, latex_thousands_formatting=Fa
                             })
     corpus_aggregate_row['sonata'] = 'Total'
     corpus_aggregate_row.name = 'Total'
-    corpus_aggregate_df = corpus_aggregate_df.append(corpus_aggregate_row)
+    corpus_aggregate_df = pd.concat([corpus_aggregate_df, pd.DataFrame([corpus_aggregate_row])], ignore_index=True)
     corpus_aggregate_df['num_pnotes'] = corpus_aggregate_df['num_pnotes'].astype(int)
     corpus_aggregate_df['duration (min)'] = corpus_aggregate_df['duration (min)'].apply(
         lambda x: round(x, 3))
