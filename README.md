@@ -40,13 +40,8 @@ This branch provides the curated data in the following formats:
 This branch supports linking and 'curating' the data as described in the paper:
 
 ### Setup
-- Install dependencies:
-  - python 3.9
-  - partitura 1.4.0
-  - numpy 1.21
-  - pandas 1.4.1
-- If you use conda, you can install the dependencies with: `conda env create -f env.yml`
-- Initiate the submodules if this step is not done automatically on cloning: `git submodule init`
+- Install dependencies from yaml file:  `conda env create -f mozart_batik.yml`
+- Initiate the submodules if this step is not done automatically on cloning: `git submodule update --init`
 - To create the score2score and perf2score2annotations alignments, run: `python ./main.py`
 
 
