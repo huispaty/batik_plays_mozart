@@ -1,4 +1,4 @@
-name: mozart_batik
+name: batik_plays_mozart
 channels:
   - defaults
 dependencies:
