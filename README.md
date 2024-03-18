@@ -37,7 +37,10 @@ This branch provides the curated data in the following formats:
 ```
 
 ## `curate_data` branch
-This branch supports linking and 'curating' the data as described in the paper:
+This branch supports linking and 'curating' the data as described in the paper.
+
+## `audio_aligned_midi` branch
+This branch provides audio-adjusted MIDI and match files to correct MIDI-audio asynchronies due to different internal clocks resulting from different recording devices. This version should be used when working with both symbolic and audio recordings of the data.
 
 ### Setup
 - Install dependencies from yaml file:  `conda env create -f mozart_batik.yml`
