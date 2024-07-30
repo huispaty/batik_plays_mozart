@@ -1,6 +1,6 @@
 # The Batik-plays-Mozart corpus
 
-The [Batik-plays-Mozart corpus](link) is a piano performance-to-score dataset containing 12 complete Mozart Piano Sonatas (36 distinct movements) performed on a computer-monitored Bösendorfer grand piano by Viennese concert pianist Roland Batik. The performances are provided in MIDI format and note-aligned with scores in the New Mozart Edition and musicological harmony, cadence and phrase annotations previously published in [The Annotated 
+The [Batik-plays-Mozart corpus](https://arxiv.org/abs/2309.02399) is a piano performance-to-score dataset containing 12 complete Mozart Piano Sonatas (36 distinct movements) performed on a computer-monitored Bösendorfer grand piano by Viennese concert pianist Roland Batik. The performances are provided in MIDI format and note-aligned with scores in the New Mozart Edition and musicological harmony, cadence and phrase annotations previously published in [The Annotated 
 Mozart Sonatas](https://transactions.ismir.net/articles/10.5334/tismir.63).
 
 This repository contains all performances in MIDI, scores in MusicXML and alignments in [match file](https://arxiv.org/abs/2206.01104) format. The audio files are commercially available.
