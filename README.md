@@ -33,6 +33,7 @@ This branch provides the curated data in the following formats:
 ├── midi                        # performance midi files
 ├── score_parts_annotated       # score parts corresponding to the unfolded performed score structure, aligned to the harmony, cadence and phrase annotations
 ├── scores                      # score musicxml files
+├── scores_edited               # score musicxml files edited to fit the performance structure
 ├── annotations                 # the annotations provided by the authors of The Annotated Mozart Sonatas, linked as a submodule
 ```
 
@@ -97,6 +98,29 @@ Each movement-wise directory contains the following files:
 |   ├── kv279_3
 ├── KV280
 ├── ...
+```
+
+### Code example
+
+The file formats in this repository are well handled using the [partitura](https://github.com/CPJKU/partitura) library:
+```
+# import the library
+import partitura as pt
+
+# load a match file
+performance, alignment = pt.load_match("batik_plays_mozart/match/some_file.match")
+
+# load a musicxml score
+score = pt.load-musicxml("batik_plays_mozart/scores_edited/some_score.musicxml")
+
+# performances play some repeats and leave others, the scores in the scores_edited
+# directory only contain the repeats and navigation markers that were actually played.
+# in order to create a list of notes that corresponds to the performance from the score
+# we unfold maximally but do not repeat after markes like dal segno or da capo:
+unfolded_score_part = pt.score.unfold_part_maximal(score[0], ignore_leaps = False)
+
+# now we can get a note list or do other processing
+unfolded_score_part.note_array()
 ```
 
 # Citing
