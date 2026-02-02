@@ -123,8 +123,6 @@ unfolded_score_part = pt.score.unfold_part_maximal(score[0], ignore_leaps = Fals
 unfolded_score_part.note_array()
 ```
 
-
-
 # Citing
 If you use this dataset in your research, please cite the relevant paper:
 
