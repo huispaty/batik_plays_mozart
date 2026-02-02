@@ -12626,10 +12626,6 @@
         </barline>
       </measure>
     <measure number="57" width="222.11">
-      <barline location="left">
-        <bar-style>heavy-light</bar-style>
-        <repeat direction="forward"/>
-        </barline>
       <direction placement="below">
         <direction-type>
           <dynamics default-x="3.29" default-y="-40.00" relative-y="-40.00">
@@ -30976,10 +30972,6 @@
           <fermata type="inverted"/>
           </notations>
         </note>
-      <barline location="right">
-        <bar-style>light-heavy</bar-style>
-        <repeat direction="backward"/>
-        </barline>
       </measure>
     </part>
   </score-partwise>

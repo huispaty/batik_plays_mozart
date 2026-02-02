@@ -17821,10 +17821,6 @@
           <staff-distance>80.00</staff-distance>
           </staff-layout>
         </print>
-      <barline location="left">
-        <bar-style>heavy-light</bar-style>
-        <repeat direction="forward"/>
-        </barline>
       <harmony print-frame="no">
         <root>
           <root-step text="">C</root-step>
@@ -48773,10 +48769,6 @@
         <type>eighth</type>
         <staff>2</staff>
         </note>
-      <barline location="right">
-        <bar-style>light-heavy</bar-style>
-        <repeat direction="backward"/>
-        </barline>
       </measure>
     </part>
   </score-partwise>

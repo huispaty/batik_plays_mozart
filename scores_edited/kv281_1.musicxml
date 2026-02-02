@@ -12404,10 +12404,6 @@
           <staff-distance>80.00</staff-distance>
           </staff-layout>
         </print>
-      <barline location="left">
-        <bar-style>heavy-light</bar-style>
-        <repeat direction="forward"/>
-        </barline>
       <attributes>
         <clef number="2">
           <sign>G</sign>
@@ -33650,10 +33646,6 @@
           <fermata type="inverted"/>
           </notations>
         </note>
-      <barline location="right">
-        <bar-style>light-heavy</bar-style>
-        <repeat direction="backward"/>
-        </barline>
       </measure>
     </part>
   </score-partwise>

@@ -44561,10 +44561,6 @@
         <stem>up</stem>
         <staff>2</staff>
         </note>
-      <barline location="right">
-        <bar-style>light-heavy</bar-style>
-        <repeat direction="backward"/>
-        </barline>
       </measure>
     </part>
   </score-partwise>

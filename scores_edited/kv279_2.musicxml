@@ -10259,10 +10259,6 @@
           <staff-distance>65.00</staff-distance>
           </staff-layout>
         </print>
-      <barline location="left">
-        <bar-style>heavy-light</bar-style>
-        <repeat direction="forward"/>
-        </barline>
       <attributes>
         <clef number="1">
           <sign>G</sign>
@@ -26406,10 +26402,6 @@
         <type>16th</type>
         <staff>2</staff>
         </note>
-      <barline location="right">
-        <bar-style>light-heavy</bar-style>
-        <repeat direction="backward"/>
-        </barline>
       </measure>
     </part>
   </score-partwise>

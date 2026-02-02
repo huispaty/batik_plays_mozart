@@ -8818,10 +8818,6 @@
         </barline>
       </measure>
     <measure number="47" width="205.63">
-      <barline location="left">
-        <bar-style>heavy-light</bar-style>
-        <repeat direction="forward"/>
-        </barline>
       <harmony print-frame="no">
         <root>
           <root-step text="">C</root-step>
@@ -20933,10 +20929,6 @@
           <fermata type="inverted"/>
           </notations>
         </note>
-      <barline location="right">
-        <bar-style>light-heavy</bar-style>
-        <repeat direction="backward"/>
-        </barline>
       </measure>
     </part>
   </score-partwise>

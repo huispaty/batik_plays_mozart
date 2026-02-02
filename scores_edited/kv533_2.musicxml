@@ -9856,10 +9856,6 @@
       <forward>
         <duration>24</duration>
         </forward>
-      <barline location="right">
-        <bar-style>light-heavy</bar-style>
-        <repeat direction="backward"/>
-        </barline>
       </measure>
     <measure number="47" width="360.41">
       <print new-system="yes">
@@ -9874,10 +9870,6 @@
           <staff-distance>80.00</staff-distance>
           </staff-layout>
         </print>
-      <barline location="left">
-        <bar-style>heavy-light</bar-style>
-        <repeat direction="forward"/>
-        </barline>
       <harmony print-frame="no">
         <root>
           <root-step text="">C</root-step>
@@ -29081,10 +29073,6 @@
           <fermata type="inverted"/>
           </notations>
         </note>
-      <barline location="right">
-        <bar-style>light-heavy</bar-style>
-        <repeat direction="backward"/>
-        </barline>
       </measure>
     </part>
   </score-partwise>

@@ -12852,10 +12852,6 @@
           <staff-distance>79.34</staff-distance>
           </staff-layout>
         </print>
-      <barline location="left">
-        <bar-style>heavy-light</bar-style>
-        <repeat direction="forward"/>
-        </barline>
       <direction placement="below">
         <direction-type>
           <dynamics default-x="6.58" default-y="-44.12" relative-y="-40.00">
@@ -32928,10 +32924,6 @@
         <type>quarter</type>
         <staff>2</staff>
         </note>
-      <barline location="right">
-        <bar-style>light-heavy</bar-style>
-        <repeat direction="backward"/>
-        </barline>
       </measure>
     </part>
   </score-partwise>
